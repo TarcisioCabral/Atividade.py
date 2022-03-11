@@ -3,7 +3,7 @@ from apriori_python import apriori
 
 heart = pd.read_csv('heart.csv')
 
-agrupamento = heart.groupby('Cholesterol')['ChestPainType'].apply(list)
+agrupamento = heart.groupby('Sex')['Age'].apply(list)
 
 print(heart.head())
 
